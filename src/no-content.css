@@ -1,0 +1,57 @@
+body {
+  background: #ebedf2;
+  font-family: "Poppins", sans-serif;
+}
+
+.empty-state {
+  width: 750px;
+  height: 80vh;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 10px #e1e3ec;
+  border-radius: 4px;
+}
+.empty-state__content {
+  padding: 48px;
+  background: #bad2ea;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.empty-state__content .empty-state__icon {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border-radius: 200px;
+  justify-content: center;
+  background-color: #f7fafc;
+  box-shadow: 0px 2px 1px #e1e3ec;
+}
+.empty-state__content .empty-state__icon img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.empty-state__content .empty-state__message {
+  color: #38a169;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.85rem;
+}
+.empty-state__content .empty-state__help {
+  color: #6e6f72;
+  font-size: 1rem;
+}
+
+.credit {
+  color: #A2A5B9;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.credit a {
+  color: #444;
+}/*# sourceMappingURL=main.css.map */

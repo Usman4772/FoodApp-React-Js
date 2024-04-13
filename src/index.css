@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+.added-toast::after{
+content: "";
+position: absolute;
+bottom: 0;
+width: 100%;
+right: 0;
+height: 2px ;
+background-color: green;
+animation: removeAnimation 1s linear ;
+
+}
+
+@keyframes removeAnimation {
+    100%{
+        width: 0;
+    }
+    
+}
+
+.menu-list{
+    display: flex;
+}
+.tab_home,.tab_fav{
+    position: relative;
+}
+.tab_home::after,.tab_fav::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 2px ;
+background-color:#ff0000ff ;
+transition: all .3s ease-in-out;
+}
+.tab_home:hover::after,.tab_fav:hover::after{
+    width: 100%;
+
+}
+.item{
+    transition: all .02s ease-in;
+
+}
+.item:hover{
+    scale: 1.04;
+}
+
+@media screen and (min-width:765px) {
+    .menu-list.show{
+        display: none;
+    }
+    
+}
